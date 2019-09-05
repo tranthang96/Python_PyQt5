@@ -1,0 +1,31 @@
+Box layout
+	The Box Layout tương tự giống (similar) to the GirdLayout, However it only support a single row or column of widgets depening on the orientation. (tuy nhiên nó chỉ hỗ trợ một hàng hoặc một cột của widgets theo sự định hướng). It does however dynamically (linh hoạt) size to the number of widgets it is to contain(cần chứa) 
+Constructor 
+	The constructor for the BoxLayout is(Ham khoi tao cho BoxLayout la):
+		boxlayout = QBoxLayout()
+Method
+	Widgets are inserted (chen) into the BoxLayout with the method:
+		boxlayout.addWidget(widget, stretch, alignment)	
+		boxlayout.insertWidget(index, widget, stretch, alignment)
+	An index value in the .insertWidgets method indicates (chi ra) the location at which child widget should be placed. The widget parameter which is to be added to the BoxLayout. The stretch (keos danx doi tuong) value should be set to an integer (so nguyen) the factor at which the child stretches to fill the space. Finally, the alignment (can chinh) value can be set to one of the following:
+		Qt.AlignmentLeft
+		Qt.AlignmentRight
+		Qt.AlignmentHCenter
+		Qt.AlignmentJustify
+	Layout object are added to the Boxlayout via alternative method(phuong thuc thay the):
+		boxlayout.addLayout(layout, stretch)
+		boxlayout.insertLayout(index, layout, stretch)
+	The pixel spacing between each child widgets defaults to zero, however this configurable with:
+		boxlayout.setSpacing(spacing)
+	Spacing can be added as with a normal widget by:
+		boxlayuot.addSpacing(spacing)
+		boxlayout.insertSpacing(index, spacing)
+	The spacing value indicates (cho biet) the number of pixels spacing to be displayed. The .insertSpacing() method aslo take an index indicating (cung lay 1 chi muc) the location at which the spacing should be inserted
+	The direction(huong) of the BoxLayout is settable (giai quyet) with method:
+		boxlayout.setDirection(direction)
+	The direction parameter should be set to one of the following:
+		QboxLayout.LeftToRight()
+		QboxLayout.RightToLeft()
+		QboxLayout.TopToBottom
+		QboxLayout.BottomToTop
+		

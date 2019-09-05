@@ -1,0 +1,38 @@
+Mô đun sys trong python, cung cấp các hàm và các biến được sử dụng để thao tác các thành phần khác nhau của môi trường python. NÓ cho phép chúng ta truy cập tham số và chức năng cụ thể của hệ thống.
+
+Hàm sys.modules
+Hàm này cung cấp tên của các mô-đun python hiện có đã import.
+
+Hàm sys.argv
+Hàm này trả về một danh sách các đối số dòng lệnh được truyền cho tập lệnh Python. Tên của tập lệnh luôn là mục ở chỉ số 0 và phần còn lại của các đối số được lưu trữ tại các chỉ mục tiếp theo.
+
+Hàm sys.base_exec_prefix
+Hàm này cung cấp một cách hiệu quả cho cùng giá trị như exec_prefix. Nếu không chạy môi trường ảo, giá trị sẽ giữ nguyên.
+
+Hàm sys.base_prefix
+Nó được thiết lập trong quá trình khởi động Python, trước khi site.py chạy, có cùng giá trị với tiền tố.
+
+Hàm sys.byteorder
+Nó là một dấu hiệu của byteorder gốc cung cấp một cách hiệu quả để làm một cái gì đó.
+
+Hàm sys.maxsize
+Hàm này trả về số nguyên lớn nhất của một biến.
+
+Hàm sys.path
+Hàm này hiển thị bộ PYTHONPATH trong hệ thống hiện tại. Đây là một biến môi trường là một đường dẫn tìm kiếm cho tất cả các mô-đun python.
+
+Hàm sys.stdin
+Nó là một đối tượng chứa các giá trị gốc của stdin khi bắt đầu chương trình và được sử dụng trong quá trình hoàn thiện. Nó có thể khôi phục các tập tin.
+
+Hàm sys.getrefcount
+Hàm này trả về số tham chiếu của một đối tượng.
+
+Hàm sys.exit
+Hàm này được sử dụng để thoát khỏi console trong Python hoặc dấu nhắc lệnh và cũng được sử dụng để thoát khỏi chương trình trong trường hợp ngoại lệ.
+
+Hàm sys.executable
+Giá trị của hàm này là đường dẫn tuyệt đối đến trình thông dịch Python. Nó rất hữu ích để biết nơi python được cài đặt trên máy của người khác.
+
+Hàm sys.platform
+Giá trị của hàm này được sử dụng để xác định nền tảng mà chúng ta đang làm việc.
+

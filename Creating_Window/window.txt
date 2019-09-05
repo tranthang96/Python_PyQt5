@@ -1,0 +1,29 @@
+The window thường là cơ sở ( typicall the base) của mọi ứng dụng đồ hoạ (graphical application), and is use to display orther widgets (vật dụng khác- các icon trên của sổ)
+
+Khoi tao
+	Construction of window is done using:
+		windown = QWindow()
+
+Phuong thức (method)
+	Tiêu đề (the title) of window, thường được hiện thị (usually displayed) bằng Window Manager bằng cách (can be set using):
+		window.setTitle("tên title")
+	Các đối tượng (objects) của windown  cũng có thể được (can also be) thu nhỏ(minnimised) hoặc phóng to (maximised) theo chương trình(programatically) bằng cách:
+		window.showMinimized()
+		window.showMaximized()
+	Ngoài ra(Alternatively), some applications will want a fullscreen mode:
+		window.showFullScreen()
+	If the window is set to minimised, maximised or fullscreen, it can be restored to a normal state(trạng thái bình thường) by:
+		window.setNormal()
+	Minimum widths and heights( chiều rộng và chiều cao tối thiểu) are enforceble with (có thể thi hành bằng cách):
+		window.setMinimumWidth(kích thước chiều rộng)
+		window.setMaximumWidth(kích thước max)
+		window.setMinimumHeight( kích thước min chiều cao)
+		window.setMaximumHeight( kích thước max)	
+	
+	A specific(cụ thể) của width and/or height can also be declared via(khai báo thông qua):
+		window.setWidth(kích thước)
+		window.setHeight(kích thước)
+	
+
+	
+	

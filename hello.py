@@ -11,4 +11,7 @@ class Window(QWidget):
 app = QApplication(sys.argv)
 screen = Window()
 screen.show()
-sys.exit(app.exec_())
+#print(sys.modules)
+app.exec_()
+#sys.exit(app.exec_())
+
